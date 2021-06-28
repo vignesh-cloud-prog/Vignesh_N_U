@@ -8,9 +8,10 @@ export default function Navbar({ pageTitle, children }) {
       <nav className={navbar}>
         <title>{pageTitle}</title>
         <Link to="/">Home</Link>
-        <Link to="/">Blogs</Link>
-        <Link to="/">Tutorials</Link>
-        <Link to="about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/blogs">Blogs</Link>
+        <Link to="/tutorials">Tutorials</Link>
+        <Link to="/about">About</Link>
       </nav>
       <h1 className={title}>{pageTitle}</h1>
       <div className={container}>
