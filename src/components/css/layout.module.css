@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background: pink;
+  padding: 8px;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin: 2px 12px;
+}
+.navbar a:hover {
+  color: blue;
+}
+.title{
+  text-align: center;
+}
+.container{
+    margin: 4px 10vw;
+}
