@@ -4,18 +4,17 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+ Personal website using Gatsby 
 </h1>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Get ready with our Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    Use the Gatsby CLI to install all dependencies.
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    npm install
     ```
 
 2.  **Start developing.**
@@ -23,7 +22,6 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
     npm run develop
     ```
 
@@ -49,6 +47,7 @@
 
 ## 🚀 Quick start (Gatsby Cloud)
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+This project is deployed in Gatsby Cloud. 
+Visit the site now https://vigneshnu.gatsbyjs.io/
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
