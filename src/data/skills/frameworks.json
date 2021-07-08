@@ -1,0 +1,23 @@
+{
+    
+    "frameworks":[
+        {
+            "language":"python",
+            "name":"django",
+            "logo":"../../images/skills/django-logo.png",
+            "link":""
+        },
+        {
+            "language":"Javascript",
+            "name":"react",
+            "logo":"../../images/skills/react-logo.png",
+            "link":""
+        },
+        {
+            "language":"Javascript",
+            "name":"gatsby",
+            "logo":"../../images/skills/gatsby-logo.png",
+            "link":""
+        }
+    ]
+}

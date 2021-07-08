@@ -5,7 +5,6 @@ import Img from "gatsby-image";
 import { container } from "../../styles/project-list.module.css"
 
 const Projects = ({ data }) => {
-  console.log(data);
   const projects = data.projects.nodes;
 
   return (

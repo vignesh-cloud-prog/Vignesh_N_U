@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,6 +22,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
       },
     },
     {

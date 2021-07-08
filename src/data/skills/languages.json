@@ -1,0 +1,33 @@
+{"languages":[
+    {
+        "name":"javascript",
+        "logo":"../../images/skills/JavaScript-logo.png",
+        "link":""
+    },
+    {
+        "name":"java",
+        "logo":"",
+        "link":""
+    },
+    {
+        "name":"python",
+        "logo":"../../images/skills/python-logo.png",
+        "link":""
+    },
+    {
+        "name":"c",
+        "logo":"../../images/skills/c-logo.png",
+        "link":""
+    },
+    {
+        "name":"c++",
+        "logo":"",
+        "link":""
+    },
+    {
+        "name":"visual basic",
+        "logo":"",
+        "link":""
+    }
+]
+}
