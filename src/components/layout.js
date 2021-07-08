@@ -1,8 +1,8 @@
 import React from "react";
 import { Link,graphql,useStaticQuery } from "gatsby";
-import { navbar,title, container } from "./css/layout.module.css";
+import { navbar,title, container } from "../styles/layout.module.css";
 
-export default function Navbar({ pageTitle, children }) {
+export default function Layout({ pageTitle, children }) {
   const data = useStaticQuery(graphql`
   query MyQuery {
     site {

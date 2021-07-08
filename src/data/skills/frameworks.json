@@ -14,6 +14,18 @@
             "link":""
         },
         {
+            "language":"dart",
+            "name":"flutter",
+            "logo":"../../images/skills/flutter-logo.png",
+            "link":""
+        },
+        {
+            "language":"dart",
+            "name":"bootstrap",
+            "logo":"../../images/skills/bootstrap-logo.png",
+            "link":""
+        },
+        {
             "language":"Javascript",
             "name":"gatsby",
             "logo":"../../images/skills/gatsby-logo.png",

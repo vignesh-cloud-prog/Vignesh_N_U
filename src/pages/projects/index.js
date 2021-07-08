@@ -1,5 +1,5 @@
 import * as React from "react";
-import Navbar from "../../../src/components/layout";
+import Layout from "../../../src/components/layout";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import { container } from "../../styles/project-list.module.css"
@@ -8,7 +8,7 @@ const Projects = ({ data }) => {
   const projects = data.projects.nodes;
 
   return (
-    <Navbar pageTitle="My projects">
+    <Layout pageTitle="My projects">
       <div>
         {projects.map((project) => (
           <div className={container}>
@@ -22,7 +22,7 @@ const Projects = ({ data }) => {
           </div>
         ))}
       </div>
-    </Navbar>
+    </Layout>
   );
 };
 export default Projects;

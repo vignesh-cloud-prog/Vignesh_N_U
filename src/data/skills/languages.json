@@ -1,12 +1,13 @@
+
 {"languages":[
     {
         "name":"javascript",
-        "logo":"../../images/skills/JavaScript-logo.png",
+        "logo":"../../images/skills/javascript-logo.png",
         "link":""
     },
     {
         "name":"java",
-        "logo":"",
+        "logo":"../../images/skills/java-logo.png",
         "link":""
     },
     {
@@ -21,12 +22,22 @@
     },
     {
         "name":"c++",
-        "logo":"",
+        "logo":"../../images/skills/cpp-logo.png",
+        "link":""
+    },
+    {
+        "name":"HTML",
+        "logo":"../../images/skills/html-logo.png",
+        "link":""
+    },
+    {
+        "name":"css",
+        "logo":"../../images/skills/css-logo.png",
         "link":""
     },
     {
         "name":"visual basic",
-        "logo":"",
+        "logo":"../../images/skills/vb-logo.png",
         "link":""
     }
 ]
