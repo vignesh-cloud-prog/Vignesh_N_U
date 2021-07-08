@@ -5,31 +5,31 @@
             "language":"python",
             "name":"django",
             "logo":"../../images/skills/django-logo.png",
-            "link":""
+            "link":"https://www.djangoproject.com/"
         },
         {
             "language":"Javascript",
             "name":"react",
             "logo":"../../images/skills/react-logo.png",
-            "link":""
+            "link":"https://reactjs.org/"
         },
         {
             "language":"dart",
             "name":"flutter",
             "logo":"../../images/skills/flutter-logo.png",
-            "link":""
+            "link":"https://flutter.dev/"
         },
         {
-            "language":"dart",
+            "language":"Html css js",
             "name":"bootstrap",
             "logo":"../../images/skills/bootstrap-logo.png",
-            "link":""
+            "link":"https://getbootstrap.com/"
         },
         {
             "language":"Javascript",
             "name":"gatsby",
             "logo":"../../images/skills/gatsby-logo.png",
-            "link":""
+            "link":"https://www.gatsbyjs.com/"
         }
     ]
 }

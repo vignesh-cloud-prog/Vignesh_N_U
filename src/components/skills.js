@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as Styles from "../styles/skills.module.css";
 
@@ -33,8 +33,8 @@ export default function Skills() {
       }
     }
   `);
-  const languages = data.allSkillsJson.nodes[1].languages;
-  const frameworks = data.allSkillsJson.nodes[0].frameworks;
+  const languages = data?.allSkillsJson?.nodes[0]?.languages;
+  const frameworks = data?.allSkillsJson?.nodes[1]?.frameworks;
 
   return (
     <div>
@@ -44,13 +44,15 @@ export default function Skills() {
         {/* mapping through languages */}
         {languages.map((languages) => (
           <div className={Styles.skill}>
-            <div className={Styles.logo}>
-              <GatsbyImage
-                image={getImage(languages?.logo)}
-                alt={languages.name + " - logo"}
-              />
-            </div>
-            <h3 className={Styles.logo_name}>{languages.name}</h3>
+            <Link to={languages?.link}>
+              <div className={Styles.logo}>
+                <GatsbyImage
+                  image={getImage(languages?.logo)}
+                  alt={languages?.name + " - logo"}
+                />
+              </div>
+              <h3 className={Styles.logo_name}>{languages?.name}</h3>
+            </Link>
           </div>
         ))}
       </div>
@@ -59,13 +61,15 @@ export default function Skills() {
         {/* mapping through frameworks */}
         {frameworks.map((frameworks) => (
           <div className={Styles.skill}>
+            <Link to={frameworks?.link}>
             <div className={Styles.logo}>
               <GatsbyImage
                 image={getImage(frameworks?.logo)}
-                alt={frameworks.name + " - logo"}
+                alt={frameworks?.name + " - logo"}
               />
             </div>
-            <h3 className={Styles.logo_name}>{frameworks.name}</h3>
+            <h3 className={Styles.logo_name}>{frameworks?.name}</h3>
+            </Link>
           </div>
         ))}
       </div>

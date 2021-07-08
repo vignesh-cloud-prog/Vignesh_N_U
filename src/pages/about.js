@@ -7,10 +7,8 @@ export default function About() {
     <Layout pageTitle="About page">
       <h1>I am vignesh</h1>
       <i>a software developer</i>
-      <div >
-        <StaticImage 
-          src="../images/codingsuit.jpg"
-          alt="a coder image"></StaticImage>
+      <div>
+        <StaticImage src="../images/codingsuit.jpg" alt="a coder image" />
       </div>
     </Layout>
   );

@@ -3,42 +3,42 @@
     {
         "name":"javascript",
         "logo":"../../images/skills/javascript-logo.png",
-        "link":""
+        "link":"https://www.javascript.com/"
     },
     {
         "name":"java",
         "logo":"../../images/skills/java-logo.png",
-        "link":""
+        "link":"https://www.java.com/en/"
     },
     {
         "name":"python",
         "logo":"../../images/skills/python-logo.png",
-        "link":""
+        "link":"https://www.python.org/"
     },
     {
         "name":"c",
         "logo":"../../images/skills/c-logo.png",
-        "link":""
+        "link":"https://en.cppreference.com/w/c/language"
     },
     {
         "name":"c++",
         "logo":"../../images/skills/cpp-logo.png",
-        "link":""
+        "link":"https://en.cppreference.com/w/"
     },
     {
         "name":"HTML",
         "logo":"../../images/skills/html-logo.png",
-        "link":""
+        "link":"https://html.com/"
     },
     {
         "name":"css",
         "logo":"../../images/skills/css-logo.png",
-        "link":""
+        "link":"https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
         "name":"visual basic",
         "logo":"../../images/skills/vb-logo.png",
-        "link":""
+        "link":"https://docs.microsoft.com/en-us/dotnet/visual-basic/"
     }
 ]
 }
