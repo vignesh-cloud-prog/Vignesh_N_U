@@ -1,15 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: "Vighnesha N U",
-    description:"A website of a software develpoer. which have all the projects he worked, all his blogs and tutorial and cheetsheet for development."
+    description:
+      "A website of a software develpoer. which have all the projects he worked, all his blogs and tutorial and cheetsheet for development.",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,10 +39,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
-        plugins: ['gatsby-remark-code-buttons']
-      }
-    }
+        plugins: ["gatsby-remark-code-buttons"],
+      },
+    },
   ],
 };
