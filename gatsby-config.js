@@ -43,7 +43,5 @@ module.exports = {
         plugins: ['gatsby-remark-code-buttons']
       }
     }
-      // `gatsby-plugin-mdx`,
-  
   ],
 };

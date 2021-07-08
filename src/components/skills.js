@@ -12,7 +12,7 @@ export default function Skills() {
           language
           logo {
             childImageSharp {
-              fluid(maxWidth: 5, maxHeight: 5) {
+              fluid {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -23,7 +23,7 @@ export default function Skills() {
           name
           logo {
             childImageSharp {
-              fluid(maxWidth: 2, maxHeight: 2) {
+              fluid {
                 ...GatsbyImageSharpFluid
               }
             }
