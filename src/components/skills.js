@@ -33,8 +33,9 @@ export default function Skills() {
       }
     }
   `);
-  const languages = data?.allSkillsJson?.nodes[0]?.languages;
-  const frameworks = data?.allSkillsJson?.nodes[1]?.frameworks;
+  const frameworks = data?.allSkillsJson?.nodes[0]?.frameworks;
+  const languages = data?.allSkillsJson?.nodes[1]?.languages;
+ 
 
   return (
     <div>
@@ -44,7 +45,7 @@ export default function Skills() {
         {/* mapping through languages */}
         {languages.map((languages) => (
           <div className={Styles.skill}>
-            <Link to={languages?.link}>
+            <Link to={languages?.link} key={languages?.name}>
               <div className={Styles.logo}>
                 <GatsbyImage
                   image={getImage(languages?.logo)}
@@ -61,7 +62,7 @@ export default function Skills() {
         {/* mapping through frameworks */}
         {frameworks.map((frameworks) => (
           <div className={Styles.skill}>
-            <Link to={frameworks?.link}>
+            <Link to={frameworks?.link} key={frameworks?.name}>
             <div className={Styles.logo}>
               <GatsbyImage
                 image={getImage(frameworks?.logo)}

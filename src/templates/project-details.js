@@ -1,7 +1,8 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import Layout from '../components/layout'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
 
 export default function ProjectDetails({data}) {
     const {html}=data.markdownRemark;
@@ -10,7 +11,11 @@ export default function ProjectDetails({data}) {
         <Layout>
             <h1>{title}</h1>
             <h3>{stack}</h3>
-            <div><Img fluid={featured.childImageSharp.fluid} /></div>
+            <div>
+            <GatsbyImage
+                image={getImage(featured)}
+                alt={"featured image"}
+              /></div>
             <div dangerouslySetInnerHTML={{__html: html}}/>
         </Layout>
     )
@@ -25,13 +30,7 @@ query ProjectDetails($slug: String) {
         title
         featured {
           childImageSharp {
-            fluid (maxWidth: 200) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes      
-            }
+            gatsbyImageData
           }
         }
       }

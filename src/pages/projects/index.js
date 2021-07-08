@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../../../src/components/layout";
 import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { container } from "../../styles/project-list.module.css"
 
 const Projects = ({ data }) => {
@@ -14,7 +14,10 @@ const Projects = ({ data }) => {
           <div className={container}>
           <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
             <div>
-              <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
+              <GatsbyImage
+                image={getImage(project.frontmatter?.thumb)}
+                alt={"thumbnail"}
+              />
               <h3>{project.frontmatter.title}</h3>
               <p>{project.frontmatter.stack}</p>
             </div>
@@ -37,9 +40,7 @@ export const query = graphql`
           title
           thumb {
             childImageSharp {
-              fluid(fit: COVER, maxWidth: 10, maxHeight: 4) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData
             }
           }
         }
