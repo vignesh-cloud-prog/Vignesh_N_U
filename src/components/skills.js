@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as Styles from "../styles/skills.module.css";
 
@@ -35,7 +35,7 @@ export default function Skills() {
   `);
   const frameworks = data?.allSkillsJson?.nodes[0]?.frameworks;
   const languages = data?.allSkillsJson?.nodes[1]?.languages;
- 
+ console.log(languages,frameworks);
 
   return (
     <div>
@@ -43,34 +43,34 @@ export default function Skills() {
       <h2>Languages</h2>
       <div className={Styles.skills_box}>
         {/* mapping through languages */}
-        {languages.map((languages) => (
-          <div className={Styles.skill}>
-            <Link to={languages?.link} key={languages?.name}>
+        {languages?.map((language) => (
+          <div className={Styles.skill} key={language?.name}>
+              <a href={language?.link}>
               <div className={Styles.logo}>
                 <GatsbyImage
-                  image={getImage(languages?.logo)}
-                  alt={languages?.name + " - logo"}
+                  image={getImage(language?.logo)}
+                  alt={language?.name + " - logo"}
                 />
               </div>
-              <h3 className={Styles.logo_name}>{languages?.name}</h3>
-            </Link>
+              <h3 className={Styles.logo_name}>{language?.name}</h3>
+              </a>
           </div>
         ))}
       </div>
       <h2>Frameworks</h2>
       <div className={Styles.skills_box}>
         {/* mapping through frameworks */}
-        {frameworks.map((frameworks) => (
-          <div className={Styles.skill}>
-            <Link to={frameworks?.link} key={frameworks?.name}>
+        {frameworks?.map((framework) => (
+          <div className={Styles.skill} key={framework?.name}>
+              <a href={framework?.link} >
             <div className={Styles.logo}>
               <GatsbyImage
-                image={getImage(frameworks?.logo)}
-                alt={frameworks?.name + " - logo"}
+                image={getImage(framework?.logo)}
+                alt={framework?.name + " - logo"}
               />
             </div>
-            <h3 className={Styles.logo_name}>{frameworks?.name}</h3>
-            </Link>
+            <h3 className={Styles.logo_name}>{framework?.name}</h3>
+            </a>
           </div>
         ))}
       </div>

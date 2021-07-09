@@ -20,16 +20,16 @@
             "link":"https://flutter.dev/"
         },
         {
-            "language":"Html css js",
-            "name":"bootstrap",
-            "logo":"../../images/skills/bootstrap-logo.png",
-            "link":"https://getbootstrap.com/"
-        },
-        {
             "language":"Javascript",
             "name":"gatsby",
             "logo":"../../images/skills/gatsby-logo.png",
             "link":"https://www.gatsbyjs.com/"
+        },
+        {
+            "language":"Html css js",
+            "name":"bootstrap",
+            "logo":"../../images/skills/bootstrap-logo.png",
+            "link":"https://getbootstrap.com/"
         }
     ]
 }

@@ -1,0 +1,22 @@
+{
+    "name":"python Complete Course",
+    "thumb":"../../images/skills/python-logo.png",
+    "slug":"",
+    "content":[{
+        "title":"python Overview",
+        "content":[
+            {"title":"python Histrory",
+            "link":"",
+            "slug":""}],
+        "link":"",
+        "slug":""
+    },{
+        "title":"python Basics",
+        "content":[
+            {"title":"Variables in python",
+            "link":"",
+            "slug":""}],
+        "link":"",
+        "slug":""
+    }]
+}

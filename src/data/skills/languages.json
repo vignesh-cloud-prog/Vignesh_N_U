@@ -36,6 +36,11 @@
         "link":"https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
+        "name":"dart",
+        "logo":"../../images/skills/dart-logo.png",
+        "link":"https://dart.dev/"
+    },
+    {
         "name":"visual basic",
         "logo":"../../images/skills/vb-logo.png",
         "link":"https://docs.microsoft.com/en-us/dotnet/visual-basic/"

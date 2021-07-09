@@ -3,9 +3,7 @@ import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
 import Skills from "../components/skills";
 
-// markup
 const IndexPage = () => {
-
   return (
     <Layout pageTitle="Home page">
       <h1>Hello, I am Vignesh.</h1>
@@ -17,8 +15,7 @@ const IndexPage = () => {
         ></StaticImage>
       </div>
       <div>
-     <Skills></Skills>
-        
+        <Skills></Skills>
       </div>
     </Layout>
   );
