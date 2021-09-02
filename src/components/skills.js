@@ -6,6 +6,7 @@ import * as Styles from "../styles/skills.module.css";
 // icons downloaded from https://icons8.com/icon/set/javascript/color
 export default function Skills() {
   // Querying data from json file
+ 
   const data = useStaticQuery(graphql`
     query skills {
       allSkillsJson {
@@ -33,9 +34,9 @@ export default function Skills() {
       }
     }
   `);
-  const frameworks = data?.allSkillsJson?.nodes[0]?.frameworks;
-  const languages = data?.allSkillsJson?.nodes[1]?.languages;
- console.log(languages,frameworks);
+  console.log(data);
+  const frameworks = data.allSkillsJson.nodes[1].frameworks;
+  const languages = data.allSkillsJson.nodes[0].languages;
 
   return (
     <div>
