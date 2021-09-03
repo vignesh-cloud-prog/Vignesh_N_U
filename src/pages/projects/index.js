@@ -9,24 +9,25 @@ const Projects = ({ data }) => {
 
   return (
     <Layout pageTitle="My projects">
+      <h1>Projects</h1>
       <div className={Styles.container}>
         {projects.map((project) => (
           <div className={Styles.item}>
             <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
-              <div>
-                <h3>{project.frontmatter.title}</h3>
+              <div className={Styles.head}>
+                <h2>{project.frontmatter.title}</h2>
                 <small>{project.frontmatter.date}</small>
               </div>
-              <div>
+            
                 
                   <GatsbyImage
                     image={getImage(project.frontmatter?.thumb)}
                     alt={"thumbnail"}
                   />
             
-
-                <p>Domain:{project.frontmatter.domains}</p>
-                <p>Tech:{project.frontmatter.stack}</p>
+            <div className={Styles.body}>
+                <p>Domain: {project.frontmatter.domains}</p>
+                <p>Tech: {project.frontmatter.stack}</p>
               </div>
             </Link>
             <div className={Styles.action}>
