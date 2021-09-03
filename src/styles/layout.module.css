@@ -3,6 +3,9 @@
   padding: 0;
   background: whitesmoke;
 }
+a{
+  text-decoration: none;
+}
 .title{
   text-align: center;
 }

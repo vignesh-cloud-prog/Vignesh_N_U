@@ -2,26 +2,41 @@ import * as React from "react";
 import Layout from "../../../src/components/layout";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { container } from "../../styles/project-list.module.css"
+import * as Styles from "../../styles/project-list.module.css";
 
 const Projects = ({ data }) => {
   const projects = data.projects.nodes;
 
   return (
     <Layout pageTitle="My projects">
-      <div>
+      <div className={Styles.container}>
         {projects.map((project) => (
-          <div className={container}>
-          <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
-            <div>
-              <GatsbyImage
-                image={getImage(project.frontmatter?.thumb)}
-                alt={"thumbnail"}
-              />
-              <h3>{project.frontmatter.title}</h3>
-              <p>{project.frontmatter.stack}</p>
+          <div className={Styles.item}>
+            <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
+              <div>
+                <h3>{project.frontmatter.title}</h3>
+                <small>{project.frontmatter.date}</small>
+              </div>
+              <div>
+                
+                  <GatsbyImage
+                    image={getImage(project.frontmatter?.thumb)}
+                    alt={"thumbnail"}
+                  />
+            
+
+                <p>Domain:{project.frontmatter.domains}</p>
+                <p>Tech:{project.frontmatter.stack}</p>
+              </div>
+            </Link>
+            <div className={Styles.action}>
+              <a className={Styles.btn} href={project.frontmatter.code_link}>
+                Github
+              </a>
+              <a className={Styles.btn} href={project.frontmatter.project_link}>
+                View Project
+              </a>
             </div>
-          </Link>
           </div>
         ))}
       </div>
@@ -32,7 +47,9 @@ export default Projects;
 
 export const query = graphql`
   query ProjectsList {
-    projects: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+    projects: allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         frontmatter {
           slug
@@ -40,9 +57,13 @@ export const query = graphql`
           title
           thumb {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(width:800 height:300)
             }
           }
+          date(formatString: "DD MMM YYYY")
+          code_link
+          domains
+          project_link
         }
         id
       }

@@ -28,15 +28,16 @@ export default function Socials() {
       link: "tel:+91 7338085595",
       logo: "/socials/phone.png",
     },
-    {
-      name: "whatsapp",
-      link: "https://wa.me/+917338085595?text=Hello, Vignesh",
-      logo: "/socials/whatsapp.png",
-    },
+
     {
       name: "facebook",
       link: "https://www.facebook.com/vignesh.viggi.775",
       logo: "/socials/facebook.png",
+    },
+    {
+      name: "whatsapp",
+      link: "https://wa.me/+917338085595?text=Hello, Vignesh",
+      logo: "/socials/whatsapp.png",
     },
 
     {
