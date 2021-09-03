@@ -19,6 +19,21 @@ export default function Socials() {
       logo: "/socials/twitter.png",
     },
     {
+      name: "mail",
+      link: "mailto:vigneshun80@gmail.com?Subject=Why do you want to contact me?",
+      logo: "/socials/gmail.png",
+    },
+    {
+      name: "phone",
+      link: "tel:+91 7338085595",
+      logo: "/socials/phone.png",
+    },
+    {
+      name: "whatsapp",
+      link: "https://wa.me/+917338085595?text=Hello, Vignesh",
+      logo: "/socials/whatsapp.png",
+    },
+    {
       name: "facebook",
       link: "https://www.facebook.com/vignesh.viggi.775",
       logo: "/socials/facebook.png",

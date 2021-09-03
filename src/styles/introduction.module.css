@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 80vh;
-  padding-top: 5vh;
+  padding-top: 4vh;
   background: whitesmoke;
 }
 #left{
@@ -18,7 +18,7 @@
   height: 100%;
 }
 #title {
-  font-size: 4rem;
+  font-size: calc(3em + 1vmin);
 }
 #description {
   font-size: 2rem;

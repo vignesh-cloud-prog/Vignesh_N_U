@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import {
   navbar,
   link,
+  logo,
   bar,
   hamburger,
   navMenu,
@@ -19,7 +20,7 @@ export default function Navigation() {
   return (
     <nav className={navbar}>
       <span>
-        <Link to="/">{"<Vignesh/>"}</Link>
+        <Link id={logo} to="/">{"<Vignesh/>"}</Link>
       </span>
       <span>
         <span ref={refNavLinks} id={navMenu}>
