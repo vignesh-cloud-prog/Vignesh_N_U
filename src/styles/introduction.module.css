@@ -1,14 +1,15 @@
 .introduction {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90vh;
-  margin-top: 5vh;
+  height: 80vh;
+  padding-top: 5vh;
   background: whitesmoke;
 }
 #left{
     margin-top: 2em;
     display: flex;
-    height: 90vh;
+    height: 80vh;
     flex-direction: column;
     justify-content: space-between;
 }

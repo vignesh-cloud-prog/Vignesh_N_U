@@ -18,12 +18,11 @@ export default function Layout({ pageTitle, children }) {
   return (
     <div>
       <Navigation />
-      
       <main>
-      <title>
-        {pageTitle} | {data.site.siteMetadata.title}
-      </title>
-       
+        <title>
+          {pageTitle} | {data.site.siteMetadata.title}
+        </title>
+
         <div className={container}>{children}</div>
       </main>
     </div>

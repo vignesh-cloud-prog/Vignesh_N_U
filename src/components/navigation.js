@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { Link } from "gatsby";
 import {
   navbar,
-  logo,
   link,
   bar,
   hamburger,
@@ -12,18 +11,15 @@ export default function Navigation() {
   const refNavLinks = useRef(null);
   const refBurger = useRef(null);
   function showNav(e) {
-    
     if (refNavLinks.current.style.display === "flex")
       refNavLinks.current.style.display = "none";
     else refNavLinks.current.style.display = "flex";
-    refBurger.current.classList.add('active')
+    refBurger.current.classList.add("active");
   }
   return (
     <nav className={navbar}>
       <span>
-        <Link id={logo} to="/">
-          {"<Vignesh/>"}
-        </Link>
+        <Link to="/">{"<Vignesh/>"}</Link>
       </span>
       <span>
         <span ref={refNavLinks} id={navMenu}>
