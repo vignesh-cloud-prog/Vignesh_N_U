@@ -22,7 +22,7 @@ export default function ProjectDetails({ data }) {
                 Github
               </a>
               <a className={Styles.btn} href={project_link}>
-                View Project
+                Live
               </a>
             </div>
     </Layout>

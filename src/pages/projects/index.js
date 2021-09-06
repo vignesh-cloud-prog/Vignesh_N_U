@@ -28,6 +28,7 @@ const Projects = ({ data }) => {
             <div className={Styles.body}>
                 <p>Domain: {project.frontmatter.domains}</p>
                 <p>Tech: {project.frontmatter.stack}</p>
+                <p className={Styles.pt}>Read More</p>
               </div>
             </Link>
             <div className={Styles.action}>
@@ -35,7 +36,7 @@ const Projects = ({ data }) => {
                 Github
               </a>
               <a className={Styles.btn} href={project.frontmatter.project_link}>
-                View Project
+                Live
               </a>
             </div>
           </div>

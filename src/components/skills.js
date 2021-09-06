@@ -9,7 +9,7 @@ export default function Skills() {
  
   const data = useStaticQuery(graphql`
     query skills {
-      allSkillsJson {
+      allJson {
         nodes {
           frameworks {
             language
@@ -31,12 +31,14 @@ export default function Skills() {
             }
           }
         }
+       
       }
     }
+    
   `);
   console.log(data);
-  const frameworks = data.allSkillsJson.nodes[1].frameworks;
-  const languages = data.allSkillsJson.nodes[0].languages;
+  const frameworks = data.allJson.nodes[1].frameworks;
+  const languages = data.allJson.nodes[2].languages;
 
   return (
     <div>

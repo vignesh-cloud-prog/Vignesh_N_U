@@ -9,8 +9,15 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-json`,
+
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-json`,
+      options: {
+        typeName: `Json`, // a fixed string
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,7 +25,7 @@ module.exports = {
         path: `${__dirname}/src/projects/`,
       },
     },
-  
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

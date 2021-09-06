@@ -1,21 +1,25 @@
 
 .body{
-    padding: 1rem 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 0.5rem;
 }
 
 .action {
+  background: white;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100vw;
     position: sticky;
     bottom: 2px;
+    margin: auto;
   }
   .btn {
     background-color: blue;
     color: white;
-    width: 50%;
+    width: 50vw;
     text-align: center;
-    padding: 1rem 1.5rem;
-    margin: 1rem 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem;
     border-radius: 12px;
   }

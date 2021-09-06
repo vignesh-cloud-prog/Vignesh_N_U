@@ -20,26 +20,28 @@ export default function Navigation() {
   return (
     <nav className={navbar}>
       <span>
-        <Link id={logo} to="/">{"<Vignesh/>"}</Link>
+        <Link id={logo} to="/">
+          {"<Vignesh/>"}
+        </Link>
       </span>
       <span>
         <span ref={refNavLinks} id={navMenu}>
           <Link className={link} to="/projects">
             Projects
           </Link>
-          <Link className={link} to="/blogs">
+          <Link className={link} to="/education">
             Education
           </Link>
-          <Link className={link} to="/tutorials">
+          <Link className={link} to="/skills">
+            Skills
+          </Link>
+          <Link className={link} to="/blogs">
             Blogs
           </Link>
           <Link className={link} to="/about">
             Experiance
           </Link>
-          <Link className={link} to="/about">
-            Open Source
-          </Link>
-          <Link className={link} to="/about">
+          <Link className={link} to="/contact">
             Contact Me
           </Link>
         </span>
