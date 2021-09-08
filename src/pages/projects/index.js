@@ -12,8 +12,8 @@ const Projects = ({ data }) => {
       <h1>Projects</h1>
       <div className={Styles.container}>
         {projects.map((project) => (
-          <div className={Styles.item}>
-            <Link to={`/projects/${project.frontmatter.slug}`} key={project.id}>
+          <div className={Styles.item} key={project.id}>
+            <Link to={`/projects/${project.frontmatter.slug}`}>
               <div className={Styles.head}>
                 <h2>{project.frontmatter.title}</h2>
                 <small>{project.frontmatter.date}</small>
